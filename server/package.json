@@ -46,6 +46,7 @@
     "knex": "^1.0.2",
     "lodash": "^4.17.21",
     "moment": "^2.29.1",
+    "planka": "file:..",
     "rimraf": "^3.0.2",
     "sails": "^1.5.2",
     "sails-hook-orm": "^4.0.1",

@@ -2,7 +2,7 @@ version: '3'
 
 services:
   postgres:
-    image: postgres:alpine
+    image: postgres:14
     restart: unless-stopped
     volumes:
       - db-data:/var/lib/postgresql/data
@@ -10,7 +10,10 @@ services:
       - 5432:5432
     environment:
       - POSTGRES_DB=planka
-      - POSTGRES_HOST_AUTH_METHOD=trust
+      - POSTGRES_HOST_AUTH_METHOD=md5
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD= 123456
+
 
 volumes:
   db-data:
